@@ -1,0 +1,71 @@
+/* App.css */
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  /* Unique gradient background */
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #3a7bd5, #3a6073);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+body {
+  background-color: #198754;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px #993A8B;
+}
+
+.chat-box {
+  width: 90%;
+  max-width: 600px;
+  height: 400px;
+  background: rgba(71, 11, 31, 0.116);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+input {
+  padding: 12px;
+  width: 70%;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #ff7eb3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff4f81;
+}
+
+/* Gradient animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
